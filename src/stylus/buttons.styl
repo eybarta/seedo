@@ -1,0 +1,57 @@
+
+//      Buttons
+a, button
+    color: lightseagreen
+    background none 
+    border 0
+    font-size:$font-size-xbig;
+    font-family:$font-fam-condensed;
+    font-weight:$font-regular;  
+    cursor:pointer;
+    &:focus, &:active, &:visited
+        outline 0
+        border 0
+    
+.btn
+    font-size:responsive $font-size-big $font-size-xbig 
+    position relative
+    display inline-block
+    vertical-align middle
+    color lightseagreen
+    cursor pointer
+    transition color 400ms ease-out-cubic
+    &:hover, &.active
+        color lightcoral
+        
+.menu-btn
+    @extend .btn
+    font-size:responsive $font-size-xbig $font-size-xxbig
+    
+.page-btn
+    pos fixed
+    bottom 1rem
+    left 50%
+    tn translate(-50%,0)
+    font-size:responsive $font-size-xxxbig $font-size-huge
+    opacity 0.3
+    color lightseagreen
+    tr opacity 400ms ease-out-cubic
+    z 999
+    &.up
+        top 0.5rem
+        bottom auto
+    &:hover
+        opacity 0.6
+
+.send-btn
+    padding 4px 12px
+    display inline-block
+    border 1px solid alpha(lightseagreen, 0.3)
+    border-radius 6px
+    margin-top $pad-small
+    transition all 400ms ease
+    &:hover
+        border-color alpha(lightcoral, 0.3)
+        color lightcoral
+        background-color alpha(lightcoral, 0.01)
+        

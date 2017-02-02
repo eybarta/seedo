@@ -1,0 +1,32 @@
+//      Give value in pixels to calculate REM
+remify(value, size=1)
+    ensure(val, 'unit')
+    if unit(value) == 'rem'
+        return unit((value*size), 'rem');
+    else
+        return unit((value*size)/16, 'rem');
+
+//      Texture
+texturize(kind)
+    background-image:url(kind)
+    background-repeat:repeat
+
+//      Vertical Alignment
+vmid(align)
+    &:before
+        content ''
+        height 100%
+        vertical-align align
+        display inline-block
+    & > *
+        vertical-align align
+        display inline-block
+        
+//      Heights
+//      Icons
+heights = 10,20,30,40,50,60,70,80,90,100
+for i in heights
+    .mh{i}
+        max-height (i)%
+    .h{i}
+        height (i)%

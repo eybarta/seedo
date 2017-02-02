@@ -1,0 +1,129 @@
+/* normalize/.styl | http://github.com/nulltask/normalize/.styl */
+/* based on hail2u's normalize/.scss | https://github.com/hail2u/normalize/.scss */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: remify(60);
+  background: #fff;
+  border-bottom: 2px solid rgba(105,105,105,0.2);
+  text-align: right;
+  z-index: 999;
+}
+nav .download {
+  pos: absolute 50% auto auto $pad-base;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  height: 80%;
+  font: $font-regular $font-size-xxbig $font-fam-condensed;
+  z: 999;
+}
+nav .download img {
+  -webkit-transition: filter 400ms ease;
+  -webkit-transition: -webkit-filter 400ms ease;
+  transition: -webkit-filter 400ms ease;
+  transition: filter 400ms ease;
+  transition: filter 400ms ease, -webkit-filter 400ms ease;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+nav .download span {
+  pos: relative;
+}
+nav .download span:before {
+  content: '';
+  pos: absolute auto auto 0 50%;
+  tn: translate(-50%, 0);
+  height: remify(2);
+  width: 0%;
+  bg: #f08080;
+  tr: width 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+nav .download:hover span:before {
+  width: 100%;
+}
+nav .download:hover img {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+nav .navicon {
+  display: none;
+}
+nav .menu {
+  display: inline-block;
+}
+nav a.menu-btn,
+nav button {
+  padding-right: $pad-base;
+}
+nav a.menu-btn:before,
+nav button:before {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  -webkit-transform-origin: 38% 0;
+  transform-origin: 38% 0;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+nav a.menu-btn:hover:before,
+nav button:hover:before,
+nav a.menu-btn.active:before,
+nav button.active:before {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+@media only screen and (max-width: 640px) {
+  nav .navicon {
+    display: inline-block;
+    width: 98%;
+    height: 100%;
+    font-size: 0;
+    z-index: 888;
+    background: #fff;
+  }
+  nav .navicon:before {
+    font-size: remify(35) !important;
+    line-height: remify(57) !important;
+  }
+  nav .menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #fff;
+    -webkit-transform: translate(0, -100%);
+    transform: translate(0, -100%);
+    padding-left: 2%;
+    box-sizing: border-box;
+    border-left: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: -webkit-transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    z-index: 777;
+  }
+  nav .menu.active {
+    -webkit-transform: translate(0, 58px);
+    transform: translate(0, 58px);
+  }
+}
+@media only screen and (max-width: 400px) {
+  nav a.menu-btn,
+  nav button {
+    display: block !important;
+    text-align: left;
+    padding-left: 0;
+    margin-bottom: $pad-small;
+    font-size: $font-size-big;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

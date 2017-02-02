@@ -1,0 +1,55 @@
+/* normalize/.styl | http://github.com/nulltask/normalize/.styl */
+/* based on hail2u's normalize/.scss | https://github.com/hail2u/normalize/.scss */
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 0 4%;
+  font-size: calc(0.875rem + 0.25 * ((100vw - 26.25rem) / 53.75));
+  color: $gray-med;
+  border-radius: 4px;
+  border: 1px solid rgba(32,178,170,0.4);
+  resize: none;
+}
+@media screen and (min-width: 1280px) {
+  .form input,
+.form textarea {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .form input,
+.form textarea {
+    font-size: 0.875rem;
+  }
+}
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: $gray-light;
+}
+.form input::-moz-placeholder,
+.form textarea::-moz-placeholder {
+  color: $gray-light;
+}
+.form input:-ms-input-placeholder,
+.form textarea:-ms-input-placeholder {
+  color: $gray-light;
+}
+.form input::placeholder,
+.form textarea::placeholder {
+  color: $gray-light;
+}
+.form input:focus,
+.form textarea:focus,
+.form input:active,
+.form textarea:active {
+  border-color: rgba(32,178,170,0.7);
+}
+.form input {
+  height: 8vh;
+}
+.form textarea {
+  padding: 2% 4%;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=forms.css.map */

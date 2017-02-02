@@ -1,0 +1,79 @@
+/* normalize/.styl | http://github.com/nulltask/normalize/.styl */
+/* based on hail2u's normalize/.scss | https://github.com/hail2u/normalize/.scss */
+.features {
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $color-gray;
+}
+.features:before {
+  content: '';
+  display: table;
+}
+.features:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.features .wrap {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5%;
+  border-radius: 3px;
+  display: table;
+}
+.features ul:nth-child(1n) {
+  white-space: nowrap;
+  margin-bottom: 4rem;
+}
+.features ul:nth-child(2n) {
+  white-space: nowrap;
+}
+.features ul li {
+  margin: $pad-base 0;
+  font-size: calc(0.875rem + 0.25 * ((100vw - 26.25rem) / 53.75));
+}
+@media screen and (min-width: 1280px) {
+  .features ul li {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .features ul li {
+    font-size: 0.875rem;
+  }
+}
+.features ul li:before {
+  margin-right: $pad-small;
+}
+@media only screen and (min-width: 360px) {
+  .features .wrap {
+    padding: 5% 20%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .features .wrap {
+    padding: 5% 28%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .features .wrap {
+    padding: 2% !important;
+    display: block;
+  }
+  .features ul:nth-child(1n) {
+    float: left;
+    clear: left;
+    margin-bottom: 0;
+  }
+  .features ul:nth-child(2n) {
+    float: right;
+    clear: right;
+  }
+  .features ul li {
+    margin: $pad-dbl 0;
+  }
+}
+
+/*# sourceMappingURL=features.css.map */

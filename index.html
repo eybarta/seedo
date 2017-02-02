@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Seedo App</title>
+    <script src='http://code.jquery.com/jquery-2.2.0.min.js'></script> 
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans+Condensed:300,700|Stalemate|Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='dist/css/style.css'>  
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
+</head>
+<body>
+   <nav>
+       <a class="download" href="https://itunes.apple.com/lc/app/seedo-visual-reminder/id914828520?mt=8">
+            <img src="dist/img/icon_120x120.png" alt="Download Seedo from the App Store"  title="Download Seedo from the App Store"><span>DOWNLOAD</span></a>
+       <i id='navbtn' class='btn navicon'></i> 
+        <div id='navmenu' class='menu'>
+         <button data-link='features' class='menu-btn briefcase'>Features</button>
+         <button data-link='contact' class='menu-btn phone'>Contact</button>
+         <button data-link='about' class='menu-btn user'>About</button>
+        </div>
+    </nav>
+    <button id="upBtn" class="page-btn up angle-up"></button>
+    <section data-anchor="intro" class='page'>
+     <header class='hh'>
+<!--        <div class="opening">Simple & Useful</div>-->
+         <h1 class='seedo' id='seedo'>
+              <a href='/' class='logo'><img src='dist/img/seedo_logo.svg' alt='Seedo App'></a>
+              <span>The Faster Reminder.</span>
+          </h1>
+          <div class='iphone-sketch' id='isketch'> 
+              <img src='dist/img/iphone-sketch.svg' alt=''>
+          </div>
+
+      </header>
+      <div class='hh rel'>
+            <div class='intro abs'>
+                   A new kind of reminder app.
+            </div>
+            <div class="tc cl-2 fmid h100 oh">
+                 <section class='cmid'>
+                     <span class='txtx'>Any task you need to remember... just take a picture.</span>
+                 </section>
+                 <section class='bmid'>
+                      <img src='dist/img/hold-phone.png' alt='Simply take a picture' title="Take a picture">
+                  </section>
+           </div>
+          
+      </div>
+    </section>
+      <section data-anchor="page2" class='page bltgreen intro2 expand'>
+          <h2 class="big">Using Seedo, you can fast and easily create visual reminders...</h2>
+          <div class="waffle">
+             <div class="item">
+                  <img src="dist/img/screens/set-date.jpg" alt="">
+                  <span class='desc'>Set a date and your done</span>
+              </div>
+              <div class="item">
+                  <img src="dist/img/screens/grid-view.jpg" alt="">
+                  <span class='desc'>Saved as a reminder</span>
+              </div>
+              <div class="item">
+                  <img src="dist/img/screens/quick-picks.jpg" alt="">
+                  <span class='desc'>Quick picks for 1 click reminders!</span>
+              </div>
+          </div>
+      </section>
+      <section class="page bgcoral" id="features">
+          <h2>Features</h2>
+          <div class="features clr p5">
+           <div class="wrap">
+                <ul>
+                    <li class="icon-cam">Picture reminders</li>
+                    <li class="icon-stack">Visual grid/stack view</li>
+                    <li class="icon-calendar">Set date and time</li>
+                    <li class="icon-sound">Choose your sound alerts</li>
+               </ul><ul>
+                    <li class="icon-edit">Set title and notes</li>
+                    <li class="icon-mic">Record voice notes</li>
+                    <li class="icon-repeat">Smart task repeater</li>
+                    <li class="icon-loc">Location triggered tasks</li>
+                </ul>
+            </div>
+        </div>
+      </section>
+      <section class="page" id="contact">
+          <h2>Contact us</h2>
+          <h4>Would love to hear from you</h4>
+          <div class="form p2">
+              <div class="lcenter p4 clearfix">
+                  <input class="mb2" type="text" placeholder="Subject">
+                  <textarea class="mtbase" placeholder="Enter message" name="message" id="message" cols="30" rows="8"></textarea>
+                  <button class="rt send-btn">Send</button>
+              </div>
+                  
+              
+              
+          </div>
+      </section>
+      <section class="page" id="about">
+          <h2>About</h2>
+      </section>
+      <button id="pageBtn" class="page-btn arrow-circle-o-down"></button>
+    </div>
+    <script src='dist/js/jquery.hash-magic.js'></script>
+    <script src='dist/js/script.js'></script>
+</body>
+</html>

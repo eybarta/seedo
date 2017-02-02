@@ -1,0 +1,154 @@
+/* normalize/.styl | http://github.com/nulltask/normalize/.styl */
+/* based on hail2u's normalize/.scss | https://github.com/hail2u/normalize/.scss */
+.mh10 {
+  max-height: 10%;
+}
+.h10 {
+  height: 10%;
+}
+.mh20 {
+  max-height: 20%;
+}
+.h20 {
+  height: 20%;
+}
+.mh30 {
+  max-height: 30%;
+}
+.h30 {
+  height: 30%;
+}
+.mh40 {
+  max-height: 40%;
+}
+.h40 {
+  height: 40%;
+}
+.mh50 {
+  max-height: 50%;
+}
+.h50 {
+  height: 50%;
+}
+.mh60 {
+  max-height: 60%;
+}
+.h60 {
+  height: 60%;
+}
+.mh70 {
+  max-height: 70%;
+}
+.h70 {
+  height: 70%;
+}
+.mh80 {
+  max-height: 80%;
+}
+.h80 {
+  height: 80%;
+}
+.mh90 {
+  max-height: 90%;
+}
+.h90 {
+  height: 90%;
+}
+.mh100 {
+  max-height: 100%;
+}
+.h100 {
+  height: 100%;
+}
+header {
+  *zoom: 1;
+  max-width: 87.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(34,34,34,0.3);
+  text-align: center;
+  -webkit-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -ms-grid-row-align: flex-end;
+      align-items: flex-end;
+  -webkit-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+header:before {
+  content: '';
+  display: table;
+}
+header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+header .opening {
+  position: absolute;
+  top: 15%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'Stalemate';
+  font-size: 4rem;
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #46585a;
+}
+header .seedo {
+  display: inline-block;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  transition: transform 400ms ease, opacity 1200ms ease;
+}
+header .seedo.show {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+  transform: translate(0, -20%);
+}
+header .seedo a,
+header .seedo span {
+  display: block;
+  font-size: calc(0.875rem + 0.25 * ((100vw - 26.25rem) / 53.75));
+  font-family: 'yellow';
+  font-weight: 600;
+  color: rgba(35,35,35,0.7);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@media screen and (min-width: 1280px) {
+  header .seedo a,
+header .seedo span {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  header .seedo a,
+header .seedo span {
+    font-size: 0.875rem;
+  }
+}
+header .seedo a {
+  padding-bottom: 0.75rem;
+}
+@media only screen and (min-width: 1300px) {
+  header .seedo.show {
+    transform: translate(0, -50%);
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

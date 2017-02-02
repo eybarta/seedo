@@ -1,0 +1,89 @@
+//      Aliases
+// >>   @ Thanks to Rucksass (http://simplaio.github.io/rucksack/docs/#alias)
+@alias {
+    pa: padding;
+    ma: margin;
+    mt: margin-top;
+    cl: color; 
+    ta: text-align;
+    va: vertical-align;
+    z: z-index;
+    pos: position;
+    // fonts
+    fs: font-size;
+    ff: font-family;
+    fw: font-weight;
+    
+    bg: background;
+    tn: transform;
+    tr: transition;
+}
+
+
+
+//      Fonts
+// font awesome
+$fa-font-path = "http://netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts"
+// family
+$font-fam-base      = 'Lato'
+$font-fam-secondary = 'Helvetica Neue'
+$font-fam-condensed = 'Open Sans Condensed'
+
+// weights
+$font-bold          = 700
+$font-regular       = 400
+$font-light         = 300
+
+
+
+$font-size-small    = remify(12)
+$font-size-base     = remify(14)
+$font-size-big      = remify(16)
+$font-size-xbig     = remify(18)
+$font-size-xxbig    = remify(28)
+$font-size-xxxbig   = remify(34)
+$font-size-huge     = remify(44)
+$font-size-extreme  = remify(64)
+
+//      Padding
+$pad-zero           = 0
+$pad-base           = remify(24)
+$pad-tiny           = remify($pad-base, 0.25)
+$pad-small          = remify($pad-base, 0.5)
+$pad-more           = remify($pad-base, 1.5)
+$pad-dbl            = remify($pad-base, 2)
+
+
+//      Textures
+$dark               = 'dist/img/dark-texture.png'
+
+
+//      Colors
+$color-gray         = #696969
+$gray-med           = lighten($color-gray, 20)
+$gray-light         = lighten($color-gray, 50)
+$color-green        = lightseagreen
+$color-red          = lightcoral
+//      Seedo colors
+$color-blue         = #23ADBB
+$color-dark         = rgba(32,40,41,1)
+
+$aliasmap           = {
+    mt: margin-top,
+    mb: margin-bottom,
+    ml: margin-left,
+    mr: margin-right,
+    pt: padding-top,
+    pb: padding-bottom,
+    pl: padding-left,
+    pr: padding-right
+    
+}
+$sizemap            = { "0": $pad-zero,
+                        base: $pad-base,
+                        tiny: $pad-tiny,
+                        small: $pad-small,
+                        more: $pad-more,
+                        dbl: $pad-dbl
+                    }
+

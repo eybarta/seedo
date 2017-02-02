@@ -1,0 +1,45 @@
+/* normalize/.styl | http://github.com/nulltask/normalize/.styl */
+/* based on hail2u's normalize/.scss | https://github.com/hail2u/normalize/.scss */
+h2 {
+  margin: 0;
+  text-align: center;
+  font-size: calc(0.875rem + 0.25 * ((100vw - 26.25rem) / 53.75));
+  font-weight: $font-light;
+}
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  h2 {
+    font-size: 0.875rem;
+  }
+}
+h2.big {
+  text-align: center;
+  padding: 4rem 0 2rem;
+  font-size: calc(0.875rem + 0.25 * ((100vw - 26.25rem) / 53.75));
+}
+@media screen and (min-width: 1280px) {
+  h2.big {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  h2.big {
+    font-size: 0.875rem;
+  }
+}
+h4 {
+  margin: 0 auto;
+  text-align: center;
+  color: $color-green;
+}
+@media only screen and (max-width: 1300px) {
+  h2.big {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=headings.css.map */

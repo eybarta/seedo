@@ -1,0 +1,37 @@
+.features
+    center 1200px
+    color $color-gray
+    .wrap
+        width 100%
+        margin 0 auto
+        padding 5%
+        border-radius 3px
+        display table
+        +above(360px)
+            padding 5% 20%
+        +above(640px)
+            padding 5% 28%
+        +above(800px)
+            padding 2% !important
+            display block
+    ul
+        &:nth-child(1n)
+            white-space nowrap
+            margin-bottom 4rem
+            +above(800px)
+                float left
+                clear left
+                margin-bottom 0
+        &:nth-child(2n)
+            white-space nowrap
+            +above(800px)
+                float right
+                clear right 
+    ul li
+        margin $pad-base 0
+        +above(800px)
+            margin $pad-dbl 0
+        &:before
+            margin-right $pad-small
+        font-size responsive $font-size-xbig $font-size-xxxbig
+        

@@ -1,0 +1,41 @@
+@import 'vars'
+@import 'mixins'
+header 
+    center remify(1400)
+    position:relative 
+    overflow:hidden
+    
+    padding-bottom:remify(24)
+    border-bottom:1px solid rgba(#222,0.3)
+    text-align center
+    align-items flex-end
+    justify-content center
+    .opening
+        position absolute 15% auto auto 50%
+        tn translate(-50%,0)
+        font-family 'Stalemate' 
+        font-size $font-size-extreme
+        text-align center
+        padding $pad-base 0
+        color lighten($color-dark, 20%)
+    .seedo
+        display inline-block
+        margin 0
+        opacity 0
+        tr transform 400ms ease, opacity 1200ms ease
+        
+        &.show
+            opacity 1
+            tn translate(0, -20%)
+            +above(1300px)
+                tn translate(0, -50%)
+        a,span 
+            display block
+            font-size responsive $font-size-base $font-size-xbig
+            font-family 'yellow'
+            font-weight 600
+            color rgba(#23, 0.7)
+            will-change transform
+            backface-visibility hidden
+        a
+            padding-bottom ($pad-base/2)

@@ -1,0 +1,77 @@
+.clearfix
+    &:after
+        content ''
+        display block
+        clear both
+        visibility hidden
+        height 0
+        line-height 0
+        font-size 0
+.lft
+    float left
+.rt
+    float right
+
+
+// 1 - 100 % options
+for i in (0)..(100) 
+    .mh{i} 
+        min-height unit(i, 'rem') !important
+    .mw{i}
+        min-width unit(i, '%') !important
+    .mxw{i}
+        max-width unit(i, '%') !important
+    .w{i}
+        width unit(i, '%') !important
+    .ml{i}
+        margin-left unit(i, '%') !important
+    .mr{i} 
+        margin-right unit(i, '%') !important
+    .p{i} 
+        padding unit(i, '%') !important
+
+        
+for prop, size in $sizemap
+    for key, alias in $aliasmap
+        .{key}{prop}
+            {alias} size
+//        .key{prop}
+//            {alias} size
+        
+        
+.tc
+    text-align center
+    & > *
+        display inline-block
+        
+// alignments
+.fmid
+    justify-content center
+    align-items center
+.vmid
+    va middle
+    & > *
+        va middle
+.cmid
+    vmid(middle)
+.bmid
+    vmid(baseline)
+    
+// positions
+.rel
+    pos relative
+.abs
+    pos absolute
+
+// overflow
+.oh
+    overflow hidden
+    
+// colors
+.cwhite
+    color #fff
+//      Grid layout        
+.container
+    center remify(1600)
+    height 100vh
+    margin 0 auto

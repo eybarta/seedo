@@ -1,0 +1,111 @@
+/* normalize/.styl | http://github.com/nulltask/normalize/.styl */
+/* based on hail2u's normalize/.scss | https://github.com/hail2u/normalize/.scss */
+a,
+button {
+  color: #20b2aa;
+  background: none;
+  border: 0;
+  font-size: $font-size-xbig;
+  font-family: $font-fam-condensed;
+  font-weight: $font-regular;
+  cursor: pointer;
+}
+a:focus,
+button:focus,
+a:active,
+button:active,
+a:visited,
+button:visited {
+  outline: 0;
+  border: 0;
+}
+.btn,
+.menu-btn {
+  font-size: calc(12px + 9 * ((100vw - 420px) / 860));
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #20b2aa;
+  cursor: pointer;
+  -webkit-transition: color 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: color 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@media screen and (min-width: 1280px) {
+  .btn,
+.menu-btn {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .btn,
+.menu-btn {
+    font-size: 12px;
+  }
+}
+.btn:hover,
+.menu-btn:hover,
+.btn.active,
+.menu-btn.active {
+  color: #f08080;
+}
+.menu-btn {
+  font-size: calc(12px + 9 * ((100vw - 420px) / 860));
+}
+@media screen and (min-width: 1280px) {
+  .menu-btn {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .menu-btn {
+    font-size: 12px;
+  }
+}
+.page-btn {
+  pos: fixed;
+  bottom: 1rem;
+  left: 50%;
+  tn: translate(-50%, 0);
+  font-size: calc(12px + 9 * ((100vw - 420px) / 860));
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  color: #20b2aa;
+  tr: opacity 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  z: 999;
+}
+@media screen and (min-width: 1280px) {
+  .page-btn {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .page-btn {
+    font-size: 12px;
+  }
+}
+.page-btn.up {
+  top: 0.5rem;
+  bottom: auto;
+}
+.page-btn:hover {
+  opacity: 0.6;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+}
+.send-btn {
+  padding: 4px 12px;
+  display: inline-block;
+  border: 1px solid rgba(32,178,170,0.3);
+  border-radius: 6px;
+  margin-top: $pad-small;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.send-btn:hover {
+  border-color: rgba(240,128,128,0.3);
+  color: #f08080;
+  background-color: rgba(240,128,128,0.01);
+}
+
+/*# sourceMappingURL=buttons.css.map */

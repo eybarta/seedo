@@ -1,0 +1,86 @@
+//      Nav (sticky)
+nav
+    width 100%
+    position fixed 0 0
+    height remify(60)
+    background #fff
+    border-bottom:2px solid rgba(#696969, 0.2)
+    text-align right
+    vmid(middle)
+    z-index 999
+    .download
+        pos absolute 50% auto auto $pad-base
+        transform translate(0, -50%)
+        height 80%
+        font $font-regular $font-size-xxbig $font-fam-condensed
+        z 999
+        img
+            transition filter 400ms ease
+            filter brightness(100%)
+        span
+            pos relative
+            &:before
+                content ''
+                pos absolute auto auto 0 50%
+                tn translate(-50%,0)
+                height remify(2)
+                width 0%
+                bg lightcoral
+                tr width 400ms ease-out-back
+        &:hover
+            span:before
+                width 100%
+            img
+                filter brightness(95%)
+                
+            
+    .navicon
+        display:none; 
+        +below(640px)
+            display:inline-block;
+            width: 98%;
+            height: 100%;
+            font-size: 0;
+            z-index: 888;
+            background: #fff;
+            &:before
+                font-size remify(35) !important   
+                line-height remify(57) !important
+            fa(navicon)
+    .menu
+        display:inline-block;
+        +below(640px)
+            position absolute
+            right 0
+            top 0
+            background #fff
+            transform translate(0, -100%)
+            padding-left 2%
+            box-sizing border-box
+            border-left 1px solid #e3e3e3
+            border-bottom 1px solid #e3e3e3
+            transition transform 400ms ease-out-cubic
+            z-index:777
+            &.active
+                transform translate(0, 58px)
+        
+                
+    a.menu-btn, button
+        padding-right $pad-base
+        &:before
+            position relative
+            display inline-block
+            vertical-align baseline
+            transform-origin 38% 0
+            transform rotateY(0deg)
+            transition transform 400ms ease-out-quad
+        &:hover, &.active
+            &:before
+                transform rotateY(180deg)
+        +mobile()
+            display block !important
+            text-align left
+            padding-left 0
+            margin-bottom $pad-small
+            font-size $font-size-big
+ 

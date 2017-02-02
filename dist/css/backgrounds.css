@@ -1,0 +1,19 @@
+/* normalize/.styl | http://github.com/nulltask/normalize/.styl */
+/* based on hail2u's normalize/.scss | https://github.com/hail2u/normalize/.scss */
+.bggreen {
+  bg: #20b2aa;
+}
+.bltgreen {
+  bg: rgba(32,178,170,0.3);
+}
+.bgblue {
+  bg: url("../img/texture.jpg") repeat 0 0;
+}
+.bg1 {
+  bg: url("../img/take-picture.jpg") no-repeat 0 52px/100% 100%;
+}
+.bgcoral {
+  bg: url("../img/fabric-coral.png") repeat 0 0;
+}
+
+/*# sourceMappingURL=backgrounds.css.map */
